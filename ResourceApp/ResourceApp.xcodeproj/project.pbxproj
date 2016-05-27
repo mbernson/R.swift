@@ -19,6 +19,7 @@
 		D51E60C61BB1E600004BB376 /* User@white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D51E60C31BB1E600004BB376 /* User@white@2x.png */; };
 		D51E60C71BB1E600004BB376 /* User@white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D51E60C41BB1E600004BB376 /* User@white@3x.png */; };
 		D51F47231B8FAF9F0028BAFD /* NibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F47221B8FAF9F0028BAFD /* NibTests.swift */; };
+		D5246D181CF6DF6C00D47ACB /* MyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5246D171CF6DF6C00D47ACB /* MyCollectionViewController.swift */; };
 		D52725FC1C4A7C6A0005C8D4 /* Sky.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D52725FB1C4A7C6A0005C8D4 /* Sky.tiff */; };
 		D52725FE1C4BB6BC0005C8D4 /* References.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D52725FD1C4BB6BC0005C8D4 /* References.storyboard */; };
 		D55C6CC01B5D757300301B0D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55C6CBF1B5D757300301B0D /* FirstViewController.swift */; };
@@ -117,6 +118,7 @@
 		D51E60C31BB1E600004BB376 /* User@white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User@white@2x.png"; sourceTree = "<group>"; };
 		D51E60C41BB1E600004BB376 /* User@white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User@white@3x.png"; sourceTree = "<group>"; };
 		D51F47221B8FAF9F0028BAFD /* NibTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibTests.swift; sourceTree = "<group>"; };
+		D5246D171CF6DF6C00D47ACB /* MyCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewController.swift; sourceTree = "<group>"; };
 		D52725FB1C4A7C6A0005C8D4 /* Sky.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Sky.tiff; sourceTree = "<group>"; };
 		D52725FD1C4BB6BC0005C8D4 /* References.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = References.storyboard; sourceTree = "<group>"; };
 		D55C6CB81B5D757300301B0D /* ResourceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResourceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,6 +314,7 @@
 				D55C6CBF1B5D757300301B0D /* FirstViewController.swift */,
 				D55C6CC11B5D757300301B0D /* SecondViewController.swift */,
 				D5CBCE481B7682B800C5D96B /* MyViewController.swift */,
+				D5246D171CF6DF6C00D47ACB /* MyCollectionViewController.swift */,
 				D575E25C1B766CD800C22F0B /* My View.xib */,
 				D5AD5C9A1B7A8F4300A8B96C /* CellView.xib */,
 				D5BA2E5E1C90086C0025C9E3 /* CellCollectionView.xib */,
@@ -737,6 +740,7 @@
 			files = (
 				D5AD5C9F1B7A924000A8B96C /* AppDelegate.swift in Sources */,
 				D55C6CC21B5D757300301B0D /* SecondViewController.swift in Sources */,
+				D5246D181CF6DF6C00D47ACB /* MyCollectionViewController.swift in Sources */,
 				D55C6CC01B5D757300301B0D /* FirstViewController.swift in Sources */,
 				D5CBCE491B7682B800C5D96B /* MyViewController.swift in Sources */,
 				D5DE480E1B5E1CC7000F6A85 /* R.generated.swift in Sources */,
