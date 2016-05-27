@@ -28,7 +28,7 @@ struct Nib: WhiteListedExtensionsResourceType, ReusableContainer {
 
     name = url.filename!
 
-    let parserDelegate = NibParserDelegate();
+    let parserDelegate = NibParserDelegate()
 
     let parser = NSXMLParser(contentsOfURL: url)!
     parser.delegate = parserDelegate
@@ -40,13 +40,20 @@ struct Nib: WhiteListedExtensionsResourceType, ReusableContainer {
 }
 
 private class NibParserDelegate: NSObject, NSXMLParserDelegate {
-  let ignoredRootViewElements = ["placeholder"]
+  let ignoredRootViewElements = [
+    "placeholder",
+    "customObject",
+  ]
   var rootViews: [Type] = []
   var reusables: [Reusable] = []
 
   // State
   var isObjectsTagOpened = false;
   var levelSinceObjectsTagOpened = 0;
+
+  private func isElementIgnored(elementName: String) -> Bool {
+    return ignoredRootViewElements.contains(elementName) || elementName.containsString("Recognizer")
+  }
 
   @objc func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
     switch elementName {
@@ -58,7 +65,7 @@ private class NibParserDelegate: NSObject, NSXMLParserDelegate {
         levelSinceObjectsTagOpened += 1;
 
         if let rootView = viewWithAttributes(attributeDict, elementName: elementName)
-          where levelSinceObjectsTagOpened == 1 && ignoredRootViewElements.filter({ $0 == elementName }).count == 0 {
+          where levelSinceObjectsTagOpened == 1 && !isElementIgnored(elementName) {
             rootViews.append(rootView)
         }
       }
@@ -91,7 +98,7 @@ private class NibParserDelegate: NSObject, NSXMLParserDelegate {
   }
 
   func reusableFromAttributes(attributeDict: [String : String], elementName: String) -> Reusable? {
-    guard let reuseIdentifier = attributeDict["reuseIdentifier"] where reuseIdentifier != "" else {
+    guard let reuseIdentifier = attributeDict["reuseIdentifier"] where !reuseIdentifier.isEmpty else {
       return nil
     }
 
