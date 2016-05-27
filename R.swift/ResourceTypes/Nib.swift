@@ -17,7 +17,7 @@ private let ElementNameToTypeMapping = [
 ]
 
 struct Nib: WhiteListedExtensionsResourceType, ReusableContainer {
-  static let supportedExtensions: Set<String> = ["xib"]
+  static let supportedExtensions: Set<String> = ["xib", "xml"]
 
   let name: String
   let rootViews: [Type]

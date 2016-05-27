@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		5D45C2191CA12913000B8DC9 /* StringsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D997C941C7C291900B2F376 /* StringsGenerator.swift */; };
 		5D997C951C7C291900B2F376 /* StringsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D997C941C7C291900B2F376 /* StringsGenerator.swift */; };
+		D53AF6791CF83AC70063AE7A /* Issue223CollectionViewCellWithRootObjects.xib.xml in Resources */ = {isa = PBXBuildFile; fileRef = D56F12771CF833CC00B98449 /* Issue223CollectionViewCellWithRootObjects.xib.xml */; };
 		D5646DE41BE2016E0034F4D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5646DE11BE2016E0034F4D7 /* Extensions.swift */; };
 		D5646DE51BE2016E0034F4D7 /* PBXObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5646DE21BE2016E0034F4D7 /* PBXObject.swift */; };
 		D5646DE61BE2016E0034F4D7 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5646DE31BE2016E0034F4D7 /* Serialization.swift */; };
 		D56DC76D1C41758800623437 /* AccessModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56DC76C1C41758800623437 /* AccessModifier.swift */; };
 		D56DC76E1C41770500623437 /* AccessModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56DC76C1C41758800623437 /* AccessModifier.swift */; };
+		D56F127A1CF833D100B98449 /* NibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F12791CF833D100B98449 /* NibTests.swift */; };
 		D56F923D1C29421600177FF7 /* TypeVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F923C1C29421600177FF7 /* TypeVar.swift */; };
 		D56F923F1C2942B400177FF7 /* Struct+ChildValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F923E1C2942B400177FF7 /* Struct+ChildValidation.swift */; };
 		D56F92401C29475F00177FF7 /* Struct+ChildValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56F923E1C2942B400177FF7 /* Struct+ChildValidation.swift */; };
@@ -116,6 +118,8 @@
 		D5646DE21BE2016E0034F4D7 /* PBXObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBXObject.swift; sourceTree = "<group>"; };
 		D5646DE31BE2016E0034F4D7 /* Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
 		D56DC76C1C41758800623437 /* AccessModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessModifier.swift; sourceTree = "<group>"; };
+		D56F12771CF833CC00B98449 /* Issue223CollectionViewCellWithRootObjects.xib.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Issue223CollectionViewCellWithRootObjects.xib.xml; path = Resources/Issue223CollectionViewCellWithRootObjects.xib.xml; sourceTree = "<group>"; };
+		D56F12791CF833D100B98449 /* NibTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibTests.swift; path = ResourceTypes/NibTests.swift; sourceTree = "<group>"; };
 		D56F923C1C29421600177FF7 /* TypeVar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeVar.swift; sourceTree = "<group>"; };
 		D56F923E1C2942B400177FF7 /* Struct+ChildValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Struct+ChildValidation.swift"; sourceTree = "<group>"; };
 		D578CAD51CE064E900C50B7E /* version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = version.swift; sourceTree = "<group>"; };
@@ -185,6 +189,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D56F126D1CF82DE400B98449 /* ResourceTypes */ = {
+			isa = PBXGroup;
+			children = (
+				D56F12791CF833D100B98449 /* NibTests.swift */,
+			);
+			name = ResourceTypes;
+			sourceTree = "<group>";
+		};
+		D56F12701CF82F4000B98449 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D56F12771CF833CC00B98449 /* Issue223CollectionViewCellWithRootObjects.xib.xml */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D57946691B9347A70044D2FC /* Xcode.swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +258,8 @@
 		D5C4227E1B711FDF004EA9B9 /* R.swiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				D56F12701CF82F4000B98449 /* Resources */,
+				D56F126D1CF82DE400B98449 /* ResourceTypes */,
 				D5C422811B711FDF004EA9B9 /* Info.plist */,
 				D5F795C01BB9983900844EA2 /* MainTests.swift */,
 			);
@@ -409,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53AF6791CF83AC70063AE7A /* Issue223CollectionViewCellWithRootObjects.xib.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +480,7 @@
 				D5F97E4B1C1819160066D7C0 /* AssetFolder.swift in Sources */,
 				D5F12D421BDACB87009A2C88 /* input.swift in Sources */,
 				D5F795C11BB9983900844EA2 /* MainTests.swift in Sources */,
+				D56F127A1CF833D100B98449 /* NibTests.swift in Sources */,
 				D59F723D1C1964B20089767C /* Typealias.swift in Sources */,
 				D5F12D481BDACB8E009A2C88 /* XCProjectFile.swift in Sources */,
 				D5B7998A1C1B91A9009EA901 /* Module.swift in Sources */,
